@@ -1,0 +1,13 @@
+id,label,shape,color,size,status,error_rate,latency,throughput
+api-gateway,API Gateway,star,#4A90E2,50,healthy,0.1,45,1200
+frontend,Frontend,box,#50E3C2,45,healthy,0.2,120,800
+auth-service,Auth Service,star,#F5A623,45,warning,1.5,380,600
+user-service,User Service,star,#4A90E2,40,healthy,0.3,95,1500
+product-service,Product Service,star,#4A90E2,40,healthy,0.2,110,1800
+order-service,Order Service,star,#F5A623,40,warning,2.1,560,900
+cache,Redis Cache,diamond,#50E3C2,35,healthy,0,5,2000
+db-primary,PostgreSQL Primary,cylinder,#BD10E0,45,healthy,0,8,1100
+db-replica,PostgreSQL Replica,cylinder,#BD10E0,40,healthy,0,12,500
+search-engine,Elasticsearch,cylinder,#E24A4A,35,critical,5.2,2100,400
+queue,Message Queue,diamond,#F5A623,40,warning,1.8,45,800
+monitoring,Monitoring,box,#7ED321,30,healthy,0,10,100

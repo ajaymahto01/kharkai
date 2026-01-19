@@ -1,0 +1,20 @@
+from,to,label,color,type
+sg1,svc1,contains,#666666,parent
+sg1,svc2,contains,#666666,parent
+sg2,svc3,contains,#666666,parent
+sg2,svc4,contains,#666666,parent
+sg3,svc5,contains,#666666,parent
+sg3,svc6,contains,#666666,parent
+svc1,host1,runs on,#666666,parent
+svc1,host2,runs on,#666666,parent
+svc2,host1,runs on,#666666,parent
+svc3,host3,runs on,#666666,parent
+svc5,host4,runs on,#666666,parent
+host1,port1,exposes,#888888,parent
+host1,port2,exposes,#888888,parent
+host3,port3,exposes,#888888,parent
+host4,port4,exposes,#888888,parent
+port1,status1,status,#22c55e,status
+port2,status2,status,#22c55e,status
+port3,status3,status,#f59e0b,status
+port4,status4,status,#22c55e,status

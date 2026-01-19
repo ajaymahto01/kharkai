@@ -1,0 +1,22 @@
+id,label,color,size,title,level,font_color
+sg1,Web Services,#1a1a2e,40,Service Group: Web Layer,0,white
+sg2,Database Services,#1a1a2e,40,Service Group: Data Layer,0,white
+sg3,Cache Services,#1a1a2e,40,Service Group: Cache Layer,0,white
+svc1,API Gateway,#0f3460,35,Service: API Gateway,1,white
+svc2,Web UI,#0f3460,35,Service: Web UI,1,white
+svc3,PostgreSQL,#533483,35,Service: PostgreSQL,1,white
+svc4,MongoDB,#533483,35,Service: MongoDB,1,white
+svc5,Redis,#8b4789,35,Service: Redis Cache,1,white
+svc6,Memcached,#8b4789,35,Service: Memcached,1,white
+host1,web-server-01,#16a34a,32,Host: web-server-01 (192.168.1.10),2,white
+host2,web-server-02,#16a34a,32,Host: web-server-02 (192.168.1.11),2,white
+host3,db-server-01,#c026d3,32,Host: db-server-01 (192.168.2.10),2,white
+host4,cache-server-01,#ea580c,32,Host: cache-server-01 (192.168.3.10),2,white
+port1,Port 8080,#dc2626,28,Port: 8080 (HTTP),3,white
+port2,Port 443,#dc2626,28,Port: 443 (HTTPS),3,white
+port3,Port 5432,#dc2626,28,Port: 5432 (PostgreSQL),3,white
+port4,Port 6379,#dc2626,28,Port: 6379 (Redis),3,white
+status1,Running,#22c55e,28,Status: Running (Healthy),4,white
+status2,Healthy,#22c55e,28,Status: Healthy,4,white
+status3,Warning,#f59e0b,28,Status: Warning (High CPU),4,white
+status4,Running,#22c55e,28,Status: Running,4,white

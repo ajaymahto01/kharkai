@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "id": "gf1",
+      "label": "Grandfather 1",
+      "color": "#2B5A75",
+      "size": 35,
+      "title": "Generation: Grandparents",
+      "level": 0,
+      "font": {"size": 14, "color": "white"}
+    },
+    {
+      "id": "gm1",
+      "label": "Grandmother 1",
+      "color": "#6B4C5C",
+      "size": 35,
+      "title": "Generation: Grandparents",
+      "level": 0,
+      "font": {"size": 14, "color": "white"}
+    },
+    {
+      "id": "gf2",
+      "label": "Grandfather 2",
+      "color": "#2B5A75",
+      "size": 35,
+      "title": "Generation: Grandparents",
+      "level": 0,
+      "font": {"size": 14, "color": "white"}
+    },
+    {
+      "id": "gm2",
+      "label": "Grandmother 2",
+      "color": "#6B4C5C",
+      "size": 35,
+      "title": "Generation: Grandparents",
+      "level": 0,
+      "font": {"size": 14, "color": "white"}
+    },
+    {
+      "id": "f",
+      "label": "Father",
+      "color": "#3D7CA5",
+      "size": 38,
+      "title": "Generation: Parents",
+      "level": 1,
+      "font": {"size": 14, "color": "white"}
+    },
+    {
+      "id": "m",
+      "label": "Mother",
+      "color": "#8B5A7D",
+      "size": 38,
+      "title": "Generation: Parents",
+      "level": 1,
+      "font": {"size": 14, "color": "white"}
+    },
+    {
+      "id": "u",
+      "label": "Uncle",
+      "color": "#3D7CA5",
+      "size": 35,
+      "title": "Generation: Parents",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "a",
+      "label": "Aunt",
+      "color": "#8B5A7D",
+      "size": 35,
+      "title": "Generation: Parents",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "me",
+      "label": "You",
+      "color": "#4A7BA7",
+      "size": 42,
+      "title": "Generation: Current",
+      "level": 2,
+      "font": {"size": 15, "color": "white"}
+    },
+    {
+      "id": "s1",
+      "label": "Sister",
+      "color": "#9B7099",
+      "size": 38,
+      "title": "Generation: Current",
+      "level": 2,
+      "font": {"size": 14, "color": "white"}
+    },
+    {
+      "id": "c1",
+      "label": "Cousin 1",
+      "color": "#4A7BA7",
+      "size": 33,
+      "title": "Generation: Current",
+      "level": 2,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "c2",
+      "label": "Cousin 2",
+      "color": "#4A7BA7",
+      "size": 33,
+      "title": "Generation: Current",
+      "level": 2,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "ch1",
+      "label": "Child 1",
+      "color": "#5A8DB8",
+      "size": 33,
+      "title": "Generation: Children",
+      "level": 3,
+      "font": {"size": 12, "color": "white"}
+    },
+    {
+      "id": "ch2",
+      "label": "Child 2",
+      "color": "#5A8DB8",
+      "size": 33,
+      "title": "Generation: Children",
+      "level": 3,
+      "font": {"size": 12, "color": "white"}
+    }
+  ],
+  "edges": [
+    {
+      "from": "gf1",
+      "to": "f",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "gm1",
+      "to": "f",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "gf1",
+      "to": "u",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "gm1",
+      "to": "u",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "gf2",
+      "to": "m",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "gm2",
+      "to": "m",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "f",
+      "to": "me",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "m",
+      "to": "me",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "f",
+      "to": "s1",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "m",
+      "to": "s1",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "u",
+      "to": "c1",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "a",
+      "to": "c1",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "u",
+      "to": "c2",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "a",
+      "to": "c2",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "me",
+      "to": "ch1",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "me",
+      "to": "ch2",
+      "label": "parent",
+      "color": "gray"
+    },
+    {
+      "from": "f",
+      "to": "m",
+      "label": "spouse",
+      "color": "red",
+      "type": "spouse"
+    },
+    {
+      "from": "u",
+      "to": "a",
+      "label": "spouse",
+      "color": "red",
+      "type": "spouse"
+    },
+    {
+      "from": "me",
+      "to": "s1",
+      "label": "sibling",
+      "color": "blue",
+      "type": "sibling"
+    },
+    {
+      "from": "c1",
+      "to": "c2",
+      "label": "sibling",
+      "color": "blue",
+      "type": "sibling"
+    }
+  ]
+}

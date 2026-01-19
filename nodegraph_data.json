@@ -1,0 +1,322 @@
+{
+  "nodes": [
+    {
+      "id": "api-gateway",
+      "label": "API Gateway",
+      "shape": "star",
+      "color": "#4A90E2",
+      "size": 50,
+      "title": "API Gateway",
+      "status": "healthy",
+      "error_rate": 0.1,
+      "latency": 45,
+      "throughput": 1200,
+      "level": 0
+    },
+    {
+      "id": "frontend",
+      "label": "Frontend",
+      "shape": "box",
+      "color": "#50E3C2",
+      "size": 45,
+      "title": "Frontend Service",
+      "status": "healthy",
+      "error_rate": 0.2,
+      "latency": 120,
+      "throughput": 800,
+      "level": 1
+    },
+    {
+      "id": "auth-service",
+      "label": "Auth Service",
+      "shape": "star",
+      "color": "#F5A623",
+      "size": 45,
+      "title": "Authentication Service",
+      "status": "warning",
+      "error_rate": 1.5,
+      "latency": 380,
+      "throughput": 600,
+      "level": 1
+    },
+    {
+      "id": "user-service",
+      "label": "User Service",
+      "shape": "star",
+      "color": "#4A90E2",
+      "size": 40,
+      "title": "User Management Service",
+      "status": "healthy",
+      "error_rate": 0.3,
+      "latency": 95,
+      "throughput": 1500,
+      "level": 1
+    },
+    {
+      "id": "product-service",
+      "label": "Product Service",
+      "shape": "star",
+      "color": "#4A90E2",
+      "size": 40,
+      "title": "Product Catalog Service",
+      "status": "healthy",
+      "error_rate": 0.2,
+      "latency": 110,
+      "throughput": 1800,
+      "level": 1
+    },
+    {
+      "id": "order-service",
+      "label": "Order Service",
+      "shape": "star",
+      "color": "#F5A623",
+      "size": 40,
+      "title": "Order Processing Service",
+      "status": "warning",
+      "error_rate": 2.1,
+      "latency": 560,
+      "throughput": 900,
+      "level": 1
+    },
+    {
+      "id": "cache",
+      "label": "Redis Cache",
+      "shape": "diamond",
+      "color": "#50E3C2",
+      "size": 35,
+      "title": "Redis In-Memory Cache",
+      "status": "healthy",
+      "error_rate": 0,
+      "latency": 5,
+      "throughput": 2000,
+      "level": 2
+    },
+    {
+      "id": "db-primary",
+      "label": "PostgreSQL Primary",
+      "shape": "cylinder",
+      "color": "#BD10E0",
+      "size": 45,
+      "title": "Primary Database",
+      "status": "healthy",
+      "error_rate": 0,
+      "latency": 8,
+      "throughput": 1100,
+      "level": 2
+    },
+    {
+      "id": "db-replica",
+      "label": "PostgreSQL Replica",
+      "shape": "cylinder",
+      "color": "#BD10E0",
+      "size": 40,
+      "title": "Read Replica Database",
+      "status": "healthy",
+      "error_rate": 0,
+      "latency": 12,
+      "throughput": 500,
+      "level": 2
+    },
+    {
+      "id": "search-engine",
+      "label": "Elasticsearch",
+      "shape": "cylinder",
+      "color": "#E24A4A",
+      "size": 35,
+      "title": "Search Engine",
+      "status": "critical",
+      "error_rate": 5.2,
+      "latency": 2100,
+      "throughput": 400,
+      "level": 2
+    },
+    {
+      "id": "queue",
+      "label": "Message Queue",
+      "shape": "diamond",
+      "color": "#F5A623",
+      "size": 40,
+      "title": "RabbitMQ / Message Queue",
+      "status": "warning",
+      "error_rate": 1.8,
+      "latency": 45,
+      "throughput": 800,
+      "level": 2
+    },
+    {
+      "id": "monitoring",
+      "label": "Monitoring",
+      "shape": "box",
+      "color": "#7ED321",
+      "size": 30,
+      "title": "Prometheus / Grafana",
+      "status": "healthy",
+      "error_rate": 0,
+      "latency": 10,
+      "throughput": 100,
+      "level": 3
+    }
+  ],
+  "edges": [
+    {
+      "from": "api-gateway",
+      "to": "frontend",
+      "label": "frontend",
+      "color": "#4A90E2",
+      "latency_ms": 45,
+      "error_rate": 0.1,
+      "throughput_rps": 1200,
+      "status": "healthy"
+    },
+    {
+      "from": "api-gateway",
+      "to": "auth-service",
+      "label": "auth",
+      "color": "#F5A623",
+      "latency_ms": 120,
+      "error_rate": 1.5,
+      "throughput_rps": 600,
+      "status": "warning"
+    },
+    {
+      "from": "api-gateway",
+      "to": "user-service",
+      "label": "users",
+      "color": "#4A90E2",
+      "latency_ms": 95,
+      "error_rate": 0.3,
+      "throughput_rps": 1500,
+      "status": "healthy"
+    },
+    {
+      "from": "api-gateway",
+      "to": "product-service",
+      "label": "products",
+      "color": "#4A90E2",
+      "latency_ms": 110,
+      "error_rate": 0.2,
+      "throughput_rps": 1800,
+      "status": "healthy"
+    },
+    {
+      "from": "api-gateway",
+      "to": "order-service",
+      "label": "orders",
+      "color": "#F5A623",
+      "latency_ms": 560,
+      "error_rate": 2.1,
+      "throughput_rps": 900,
+      "status": "warning"
+    },
+    {
+      "from": "frontend",
+      "to": "api-gateway",
+      "label": "api",
+      "color": "#4A90E2",
+      "latency_ms": 50,
+      "error_rate": 0.1,
+      "throughput_rps": 1200,
+      "status": "healthy"
+    },
+    {
+      "from": "user-service",
+      "to": "db-primary",
+      "label": "query",
+      "color": "#BD10E0",
+      "latency_ms": 8,
+      "error_rate": 0,
+      "throughput_rps": 500,
+      "status": "healthy"
+    },
+    {
+      "from": "user-service",
+      "to": "cache",
+      "label": "cache",
+      "color": "#50E3C2",
+      "latency_ms": 5,
+      "error_rate": 0,
+      "throughput_rps": 1500,
+      "status": "healthy"
+    },
+    {
+      "from": "product-service",
+      "to": "db-primary",
+      "label": "query",
+      "color": "#BD10E0",
+      "latency_ms": 12,
+      "error_rate": 0,
+      "throughput_rps": 400,
+      "status": "healthy"
+    },
+    {
+      "from": "product-service",
+      "to": "search-engine",
+      "label": "search",
+      "color": "#E24A4A",
+      "latency_ms": 2100,
+      "error_rate": 5.2,
+      "throughput_rps": 400,
+      "status": "critical"
+    },
+    {
+      "from": "order-service",
+      "to": "db-primary",
+      "label": "query",
+      "color": "#BD10E0",
+      "latency_ms": 15,
+      "error_rate": 0,
+      "throughput_rps": 200,
+      "status": "healthy"
+    },
+    {
+      "from": "order-service",
+      "to": "queue",
+      "label": "publish",
+      "color": "#F5A623",
+      "latency_ms": 45,
+      "error_rate": 1.8,
+      "throughput_rps": 800,
+      "status": "warning"
+    },
+    {
+      "from": "auth-service",
+      "to": "db-primary",
+      "label": "query",
+      "color": "#BD10E0",
+      "latency_ms": 10,
+      "error_rate": 0.5,
+      "throughput_rps": 300,
+      "status": "healthy"
+    },
+    {
+      "from": "queue",
+      "to": "order-service",
+      "label": "consume",
+      "color": "#F5A623",
+      "latency_ms": 50,
+      "error_rate": 0.5,
+      "throughput_rps": 700,
+      "status": "healthy"
+    },
+    {
+      "from": "monitoring",
+      "to": "api-gateway",
+      "label": "scrape",
+      "color": "#7ED321",
+      "latency_ms": 10,
+      "error_rate": 0,
+      "throughput_rps": 100,
+      "status": "healthy"
+    },
+    {
+      "from": "monitoring",
+      "to": "auth-service",
+      "label": "scrape",
+      "color": "#7ED321",
+      "latency_ms": 10,
+      "error_rate": 0,
+      "throughput_rps": 100,
+      "status": "healthy"
+    }
+  ]
+}

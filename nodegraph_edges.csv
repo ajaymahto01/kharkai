@@ -1,0 +1,17 @@
+from,to,latency_ms,error_rate,throughput_rps,status
+api-gateway,frontend,45,0.1,1200,healthy
+api-gateway,auth-service,120,1.5,600,warning
+api-gateway,user-service,95,0.3,1500,healthy
+api-gateway,product-service,110,0.2,1800,healthy
+api-gateway,order-service,560,2.1,900,warning
+frontend,api-gateway,50,0.1,1200,healthy
+user-service,db-primary,8,0,500,healthy
+user-service,cache,5,0,1500,healthy
+product-service,db-primary,12,0,400,healthy
+product-service,search-engine,2100,5.2,400,critical
+order-service,db-primary,15,0,200,healthy
+order-service,queue,45,1.8,800,warning
+auth-service,db-primary,10,0.5,300,healthy
+queue,order-service,50,0.5,700,healthy
+monitoring,api-gateway,10,0,100,healthy
+monitoring,auth-service,10,0,100,healthy

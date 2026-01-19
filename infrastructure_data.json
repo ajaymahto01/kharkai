@@ -1,0 +1,328 @@
+{
+  "nodes": [
+    {
+      "id": "sg1",
+      "label": "Web Services",
+      "color": "#1a1a2e",
+      "size": 40,
+      "title": "Service Group: Web Layer",
+      "level": 0,
+      "font": {"size": 14, "color": "white", "bold": {"mod": "bold"}}
+    },
+    {
+      "id": "sg2",
+      "label": "Database Services",
+      "color": "#1a1a2e",
+      "size": 40,
+      "title": "Service Group: Data Layer",
+      "level": 0,
+      "font": {"size": 14, "color": "white", "bold": {"mod": "bold"}}
+    },
+    {
+      "id": "sg3",
+      "label": "Cache Services",
+      "color": "#1a1a2e",
+      "size": 40,
+      "title": "Service Group: Cache Layer",
+      "level": 0,
+      "font": {"size": 14, "color": "white", "bold": {"mod": "bold"}}
+    },
+    {
+      "id": "svc1",
+      "label": "API Gateway",
+      "color": "#0f3460",
+      "size": 35,
+      "title": "Service: API Gateway",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "svc2",
+      "label": "Web UI",
+      "color": "#0f3460",
+      "size": 35,
+      "title": "Service: Web UI",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "svc3",
+      "label": "PostgreSQL",
+      "color": "#533483",
+      "size": 35,
+      "title": "Service: PostgreSQL",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "svc4",
+      "label": "MongoDB",
+      "color": "#533483",
+      "size": 35,
+      "title": "Service: MongoDB",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "svc5",
+      "label": "Redis",
+      "color": "#8b4789",
+      "size": 35,
+      "title": "Service: Redis Cache",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "svc6",
+      "label": "Memcached",
+      "color": "#8b4789",
+      "size": 35,
+      "title": "Service: Memcached",
+      "level": 1,
+      "font": {"size": 13, "color": "white"}
+    },
+    {
+      "id": "host1",
+      "label": "web-server-01",
+      "color": "#16a34a",
+      "size": 32,
+      "title": "Host: web-server-01 (192.168.1.10)",
+      "level": 2,
+      "font": {"size": 12, "color": "white"}
+    },
+    {
+      "id": "host2",
+      "label": "web-server-02",
+      "color": "#16a34a",
+      "size": 32,
+      "title": "Host: web-server-02 (192.168.1.11)",
+      "level": 2,
+      "font": {"size": 12, "color": "white"}
+    },
+    {
+      "id": "host3",
+      "label": "db-server-01",
+      "color": "#c026d3",
+      "size": 32,
+      "title": "Host: db-server-01 (192.168.2.10)",
+      "level": 2,
+      "font": {"size": 12, "color": "white"}
+    },
+    {
+      "id": "host4",
+      "label": "cache-server-01",
+      "color": "#ea580c",
+      "size": 32,
+      "title": "Host: cache-server-01 (192.168.3.10)",
+      "level": 2,
+      "font": {"size": 12, "color": "white"}
+    },
+    {
+      "id": "port1",
+      "label": "Port 8080",
+      "color": "#dc2626",
+      "size": 28,
+      "title": "Port: 8080 (HTTP)",
+      "level": 3,
+      "font": {"size": 11, "color": "white"}
+    },
+    {
+      "id": "port2",
+      "label": "Port 443",
+      "color": "#dc2626",
+      "size": 28,
+      "title": "Port: 443 (HTTPS)",
+      "level": 3,
+      "font": {"size": 11, "color": "white"}
+    },
+    {
+      "id": "port3",
+      "label": "Port 5432",
+      "color": "#dc2626",
+      "size": 28,
+      "title": "Port: 5432 (PostgreSQL)",
+      "level": 3,
+      "font": {"size": 11, "color": "white"}
+    },
+    {
+      "id": "port4",
+      "label": "Port 6379",
+      "color": "#dc2626",
+      "size": 28,
+      "title": "Port: 6379 (Redis)",
+      "level": 3,
+      "font": {"size": 11, "color": "white"}
+    },
+    {
+      "id": "status1",
+      "label": "Running",
+      "color": "#22c55e",
+      "size": 28,
+      "title": "Status: Running (Healthy)",
+      "level": 4,
+      "font": {"size": 10, "color": "white", "bold": {"mod": "bold"}}
+    },
+    {
+      "id": "status2",
+      "label": "Healthy",
+      "color": "#22c55e",
+      "size": 28,
+      "title": "Status: Healthy",
+      "level": 4,
+      "font": {"size": 10, "color": "white", "bold": {"mod": "bold"}}
+    },
+    {
+      "id": "status3",
+      "label": "Warning",
+      "color": "#f59e0b",
+      "size": 28,
+      "title": "Status: Warning (High CPU)",
+      "level": 4,
+      "font": {"size": 10, "color": "white", "bold": {"mod": "bold"}}
+    },
+    {
+      "id": "status4",
+      "label": "Running",
+      "color": "#22c55e",
+      "size": 28,
+      "title": "Status: Running",
+      "level": 4,
+      "font": {"size": 10, "color": "white", "bold": {"mod": "bold"}}
+    }
+  ],
+  "edges": [
+    {
+      "from": "sg1",
+      "to": "svc1",
+      "label": "contains",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "sg1",
+      "to": "svc2",
+      "label": "contains",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "sg2",
+      "to": "svc3",
+      "label": "contains",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "sg2",
+      "to": "svc4",
+      "label": "contains",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "sg3",
+      "to": "svc5",
+      "label": "contains",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "sg3",
+      "to": "svc6",
+      "label": "contains",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "svc1",
+      "to": "host1",
+      "label": "runs on",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "svc1",
+      "to": "host2",
+      "label": "runs on",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "svc2",
+      "to": "host1",
+      "label": "runs on",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "svc3",
+      "to": "host3",
+      "label": "runs on",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "svc5",
+      "to": "host4",
+      "label": "runs on",
+      "color": "#666666",
+      "type": "parent"
+    },
+    {
+      "from": "host1",
+      "to": "port1",
+      "label": "exposes",
+      "color": "#888888",
+      "type": "parent"
+    },
+    {
+      "from": "host1",
+      "to": "port2",
+      "label": "exposes",
+      "color": "#888888",
+      "type": "parent"
+    },
+    {
+      "from": "host3",
+      "to": "port3",
+      "label": "exposes",
+      "color": "#888888",
+      "type": "parent"
+    },
+    {
+      "from": "host4",
+      "to": "port4",
+      "label": "exposes",
+      "color": "#888888",
+      "type": "parent"
+    },
+    {
+      "from": "port1",
+      "to": "status1",
+      "label": "status",
+      "color": "#22c55e",
+      "type": "status"
+    },
+    {
+      "from": "port2",
+      "to": "status2",
+      "label": "status",
+      "color": "#22c55e",
+      "type": "status"
+    },
+    {
+      "from": "port3",
+      "to": "status3",
+      "label": "status",
+      "color": "#f59e0b",
+      "type": "status"
+    },
+    {
+      "from": "port4",
+      "to": "status4",
+      "label": "status",
+      "color": "#22c55e",
+      "type": "status"
+    }
+  ]
+}
